@@ -5,37 +5,37 @@
     padding: 0;
 }
 
-.headerdiv{
-    /* border: 2px solid red; */
+/* .headerdiv{
+    border: 2px solid red;
     padding: 1rem;
     background-color: rgba(221, 220, 220, 0.267);
     
-}
+} */
 
-.logo{
+/* .logo{
     display: flex;
 }
 
 .logo img{
     height: 25px;
     width: 25px;
-    /* margin-top: 3px; */
-}
+    margin-top: 3px;
+} */
 
 .head-content{
     font-family: 'Poppins', sans-serif;
-    /* border: 2px dotted red; */
+    border: 2px dotted red;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     /* margin-left: 100px; */
     margin: auto;
     padding-top: 7px ;
     padding-bottom: 7px;
 }
 
-.buttons button{
+.nav-items button{
     border: none;
     background-color: rgb(71, 90, 71);
     color: rgb(218, 217, 217);
@@ -50,10 +50,10 @@ label, .menu-icon{
     font-size: 30px;
 }
 
-.nav-items{
-    /* border: 1px solid green; */
+/* .nav-items{
+    border: 1px solid green;
     margin-left: 170px;
-}
+} */
 
 .nav-items a{
     padding-left: 35px;
@@ -62,10 +62,14 @@ label, .menu-icon{
     color: rgb(37, 37, 37);
 }
 
+/* .nav-items:first-child{
+    color: red;
+} */
+
 /* responsibe for nav */
 @media(max-width: 475px){
     .nav-wrapper{
-        /* display: none; */
+        display: none;
         /* height: 45vh; */
         padding: 20px;
         position: absolute;
@@ -81,6 +85,18 @@ label, .menu-icon{
         
     }
 
+    .nav-items{
+        display: flex;
+        flex-direction: column;
+        /* align-items: center;
+        justify-content: center; */
+    }
+    .nav-items a{
+        text-align: center;
+        color: #fff;
+        padding: 20px;
+        border-bottom: 2px solid #fff;
+    }
     label{
         display: block;
         font-weight: 900;
@@ -89,12 +105,6 @@ label, .menu-icon{
     #toggle:checked + .nav-wrapper{
         display: block;
     }
-
-
-
-
-    
-
 }
 
 
@@ -102,19 +112,13 @@ label, .menu-icon{
 .container{
     /* border: 2px solid blue; */
     background-color: rgba(221, 220, 220, 0.267);
-    width: 100%;
-    /* max-width: 1200px; */
-    
-    
 }
 .sec-one{
-    
     /* border: 2px dotted; */
     max-width: 1000px;
     margin: auto;
     display: flex;
     padding-top: 30px;
-    margin-top: 10px;
     justify-content: space-between;
     /* margin-left: 60px; */
     /* padding-left: 10px; */
@@ -251,7 +255,7 @@ label, .menu-icon{
 
 .sec-two h3{
     letter-spacing: 1.5px;
-    
+    /* border: 2px solid; */
 }
 
 .write-up p{
@@ -413,18 +417,19 @@ label, .menu-icon{
     }
 }
 
-
-
-
-
+/* styling for sec four */
 .sec-four{
     font-family: 'Poppins', sans-serif;
     /* border: 2px solid purple; */
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
     margin-top: 30px;
 }
 
+.course-header{
+    max-width: 1000px;
+    margin: auto;
+}
 .course-con{
     /* border: 2px solid firebrick; */
     display: flex;
@@ -434,10 +439,9 @@ label, .menu-icon{
 
 .course-items{
     /* border: 2px dotted yellowgreen; */
-    max-width: 250px;
+    max-width: 200px;
     background-color: white;
     /* padding-left: 10px; */
-    
 }
 
 .img-div img {
@@ -459,10 +463,22 @@ label, .menu-icon{
     border: 1px solid;
     position: relative;
     /* width: 100%; */
-    width: 250px;
+    width: 200px;
     height: 150px;
     margin-bottom: 5px;
     /* padding-left: 10px; */
+}
+
+.star{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+
+
+.checked{
+    color: orange;
 }
 
 /* responsibe for sec-four */
@@ -472,19 +488,13 @@ label, .menu-icon{
     }
 
     .sec-four h3{
-        /* border: 2px solid firebrick; */
         text-align: center;
-        /* width: 100%; */
-        margin: auto;
-        /* padding-left: 20px; */
-        padding-right: 30px;
-
     }
 
-    .sec-four>p{
+    .sec-four p{
         /* border: 1px solid; */
         text-align: center;
-        padding-right: 30px;
+        /* padding-right: 30px; */
 
     }
 
@@ -610,17 +620,3 @@ footer{
     font-size: 15px;
 }
 
-.star{
-    display: flex;
-    justify-content: space;
-    margin-left: 10px;
-    margin-top: 15px;
-}
-
-.star h5{
-    margin-left: 100px;
-}
-
-.checked{
-    color: orange;
-}
